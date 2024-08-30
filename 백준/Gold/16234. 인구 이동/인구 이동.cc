@@ -41,7 +41,7 @@ int main(){
     				v.push_back({i,j});
 					sum=a[i][j]; //합계에 셀값 더하고
 					dfs(i,j,v);  
-					if(v.size()==1){
+					if(v.size()==1){ //v.size()가 1이면 인구이동이 없을때를 뜻함
 						continue;
 					}
 					for(pair<int,int> b : v){
